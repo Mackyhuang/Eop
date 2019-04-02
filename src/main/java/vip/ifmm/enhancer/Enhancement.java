@@ -51,7 +51,7 @@ public class Enhancement implements MethodInterceptor {
         //调用实际的业务方法
         Object result = proxy.invokeSuper(obj, args);
         //执行 后 增强
-        adapter.preInvoke();
+        adapter.postInvoke();
         return result;
     }
 }

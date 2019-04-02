@@ -8,7 +8,13 @@ package vip.ifmm.enhancer;
  */
 public interface EnhancementAdapter {
 
+    /**
+     * <p>Enhancement method executed before the original method</p>
+     */
     void preInvoke();
 
+    /**
+     * <p>Enhancement method executed after the original method</p>
+     */
     void postInvoke();
 }

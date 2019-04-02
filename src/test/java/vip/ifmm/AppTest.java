@@ -3,10 +3,12 @@ package vip.ifmm;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import vip.ifmm.annotation.Recordlog;
+import vip.ifmm.Sleep;
 import vip.ifmm.enhancer.Enhancement;
 import vip.ifmm.service.SimpleAdapter;
-import vip.ifmm.service.Sleep;
 
 /**
  * Unit test for simple App.
@@ -31,4 +33,9 @@ public class AppTest
         String huLuuuuuuuu = proxySleep.sleep("HuLuuuuuuuu");
         System.out.println("log : " + huLuuuuuuuu);
     }
+
+
+
+
+
 }
